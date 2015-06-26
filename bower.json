@@ -1,0 +1,19 @@
+{
+  "name": "ts",
+  "version": "0.0.0",
+  "authors": [
+    "Jahanzeb Sabir <jahanzeb_sabir@hotamil.com>"
+  ],
+  "license": "MIT",
+  "homepage": "public/index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.5"
+  }
+}
