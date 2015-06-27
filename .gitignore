@@ -45,3 +45,4 @@ Temporary Items
 #Ignore Folder & Files
 bower_components/
 node_modules/
+.sass-cache/
