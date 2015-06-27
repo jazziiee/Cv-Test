@@ -1,1 +1,176 @@
 @import "bootstrap";
+
+/*@include dasd();*/
+
+@mixin darkpink(){
+	color:#b20265;
+}
+
+@mixin hel( $weight ){
+	font-family: 'helvetica_neueregular';
+	font-weight: $weight;
+}
+
+@mixin bb(){
+	border-bottom: 1px solid rgba(153,153,153, .1);
+}
+
+body{
+	@include hel(200);
+}
+
+p{
+	line-height: 22px;
+	font-size: 18px;
+	color: #888;
+}
+
+ul.unstyled{
+	padding-left: 0px;
+	list-style: none;
+
+	li{
+	line-height: 22px;
+	font-size: 18px;
+	color: #888;
+	}
+}
+
+@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('../fonts/helveticaneue-lightcond-webfont.eot');
+    src: url('../fonts/helveticaneue-lightcond-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneue-lightcond-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-lightcond-webfont.woff') format('woff'),
+         url('../fonts/helveticaneue-lightcond-webfont.ttf') format('truetype'),
+         url('../fonts/helveticaneue-lightcond-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a{
+	@include darkpink();
+}
+
+header{
+	margin-top: 50px;
+	@include clearfix();
+
+	.name{
+		@include bb();
+		padding-bottom: 15px;
+		h1{
+			margin-top: 0px;
+			margin-bottom: 0px;
+			font-size: 50px;
+			font-weight: 600;
+			line-height:42px ;
+		}
+		h2{
+			float: right;
+			text-align: right;
+			margin-top: 0px;
+			margin-bottom: 0px;
+			font-size: 50px;
+			font-weight: 600;
+			line-height:42px ;
+		}
+	}
+
+	.contacts{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		span{
+			font-size: 20px;
+			a{
+				@include darkpink();
+			}
+
+			&.em{
+				margin-left: 15px;
+			}
+			&.mob{
+				float: right;
+			}
+		}
+	}
+}
+
+/*header ends here
+============================*/
+
+.gen{
+	h2{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-size: 28px;
+		font-weight: 400;
+	}
+
+	h5{
+		margin-top: 0px;
+		@include darkpink();
+	}
+
+	p{
+		@include bb();
+		padding-bottom: 7px;
+	}
+
+	&.experience, &.education, &.Specialities, &.summary{
+		margin-bottom: 10px;
+	}
+
+	&.education{
+		p{
+			border-bottom: 0px;
+			padding-bottom: 0px;
+		}
+	}
+
+	&.Specialities{
+		p{
+			border-bottom: none;
+			padding-bottom: 0px;
+		}
+	}
+
+
+}
+
+.employment{
+	ul{
+		li{
+			h2{
+
+			}
+
+			h3{
+
+			}
+		}
+	}
+}
+
+.Specialities{
+	ul{
+		@include bb();
+		padding-bottom: 5px;
+		@include clearfix();
+		li{
+			margin-bottom: 8px;
+			float: left;
+			width: 50%;
+		}
+	}
+}
+
+.education{
+	ul{
+		@include bb();
+		padding-bottom: 5px;
+		li{
+			margin-bottom: 8px;
+		}
+	}
+}
