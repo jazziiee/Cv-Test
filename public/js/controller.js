@@ -111,52 +111,52 @@ app.controller('MainController', function($scope) {
         "url" : "http://www.abraaj.com/"
       },
       {
-        "name" : "",
-        "url" : ""
+        "name" : "mediaonehotel.com",
+        "url" : "http://www.mediaonehotel.com/"
       },
       {
-        "name" : "",
-        "url" : ""
+        "name" : "glimus-gt.com",
+        "url" : "http://www.glimus-gt.com/"
       },
       {
-        "name" : "",
-        "url" : ""
+        "name" : "helidubai.com",
+        "url" : "http://www.helidubai.com/"
       },
       {
-        "name" : "",
-        "url" : ""
+        "name" : "mydmcc.ae",
+        "url" : "http://www.mydmcc.ae/"
       },
       {
-        "name" : "",
-        "url" : ""
+        "name" : "sf-yachts.com",
+        "url" : "http://www.sf-yachts.com/"
       },
       {
-        "name" : "",
-        "url" : ""
+        "name" : "scafa.ae",
+        "url" : "http://www.scafa.ae/"
       },
       {
-        "name" : "",
-        "url" : ""
+        "name" : "nddgroup.com",
+        "url" : "http://www.nddgroup.com/"
       },
       {
-        "name" : "",
-        "url" : ""
+        "name" : "cityseasonshotels.com",
+        "url" : "http://www.cityseasonshotels.com/"
       },
       {
-        "name" : "",
-        "url" : ""
+        "name" : "hiltonhotelsmea.com",
+        "url" : "http://www.hiltonhotelsmea.com/"
       },
       {
-        "name" : "",
-        "url" : ""
+        "name" : "jannah.ae",
+        "url" : "http://jannah.ae/"
       },
       {
-        "name" : "",
-        "url" : ""
+        "name" : "mdsaptech.com",
+        "url" : "http://www.mdsaptech.com/"
       },
       {
-        "name" : "",
-        "url" : ""
+        "name" : "joie-design.com",
+        "url" : "http://www.joie-design.com/"
       }
 
      
