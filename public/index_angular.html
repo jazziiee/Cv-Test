@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myCvApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Cv</title>
+    <!-- Bootstrap -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body ng-controller="MainController">
+    <section class="container">
+
+      <header>
+        <div class="row name">
+          <div class="col-sm-6">
+            <h1>Jahanzeb<br>Sabir</h1>
+          </div>
+          <div class="col-sm-6">
+            <h2>FRONT END<br>WEB DEVELOPER</h2>
+          </div>
+        </div>
+        <div class="row contacts">
+          <span class="em">email: <a href="mailto:jahanzeb_sabir@hotmail.com">jahanzeb_sabir@hotmail.com</a></span>
+          <span class="mob">mobile: <a href="tel:+971561833510">+971 56 1833510</a></span>
+        </div>
+      </header>
+          <!-- header section ends here -->
+
+      <section class="gen summary">
+        <article class="row">
+          <div class="col-sm-3">
+            <h2>{{summary.title}}</h2>
+          </div>
+          <div class="col-sm-9">
+            <p>{{summary.desc}}</p>
+          </div>
+        </article>
+      </section>
+          <!-- Summary section ends here -->
+
+      <section class="gen experience">
+        <article class="row">
+          <div class="col-sm-3">
+            <h2>{{experience.title}}</h2>
+            <h5>{{experience.years}}</h5>
+          </div>
+          <div class="col-sm-9">
+            <p>{{experience.desc}} <a href="http://digitalnexa.com">@DIGITALNEXA</a>.</p> 
+          </div>
+        </article>
+      </section>
+      <!-- Experience section ends here -->
+
+      <section class="gen education">
+        <article class="row">
+          <div class="col-sm-3">
+            <h2>{{education.list}}</h2>
+          </div>
+          <div class="col-sm-9">
+            <ul class="unstyled">
+              <li ng-repeat="item in educationList track by $index">{{item}}</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+        <!-- Education section ends here -->
+
+      <section class="gen Specialities">
+        <article class="row">
+          <div class="col-sm-3">
+            <h2>{{specialities.title}}</h2>
+          </div>
+          <div class="col-sm-6">
+            <ul class="unstyled">
+              <li ng-repeat="item in specialitiesList track by $index">{{item}}</li>
+            </ul>
+          </div>
+          <div class="col-sm-3">
+            <div class="skills">
+              <img src="images/skills.jpg"  width="100%">
+            </div>
+          </div>
+        </article>
+      </section>
+        <!-- Specialities section ends here -->
+      <section class="gen employment">
+        <article class="row">
+          <div class="col-sm-3">
+            <h2>Employment</h2>
+          </div>
+          <div class="col-sm-9">
+            <ul class="unstyled">
+              <li ng-repeat="item in employmentList">
+                <h2>{{item.title}}</h2>
+                <h3>{{item.role}}</h3>
+                <p>{{item.desc}}</p>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+        <!-- employment section ends here -->
+      <section class="gen interest">
+        <article class="row">
+          <div class="col-sm-3">
+            <h2>{{interest.title}}</h2>
+          </div>
+          <div class="col-sm-9">
+            <p>{{interest.desc}}</p>
+          </div>
+        </article>
+      </section>
+        <!-- interest ends here -->
+      <section class="gen portfolio">
+        <article class="row">
+          <div class="col-sm-3">
+            <h2>Portfolio</h2>
+            <h5>Compaitable with
+            Mobile, Tablet and
+            other devices</h5>
+          </div>
+          <div class="col-sm-9">
+            <ul class="unstyled">
+
+              <li ng-repeat="folio in portfolioList"><a href="{{folio.url}}">{{folio.name}}</a></li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+    </section>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+    <script src="js/controller.js"></script>
+  </body>
+</html>
